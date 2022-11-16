@@ -196,3 +196,37 @@ body {
     opacity: 1;
     top: 8rem;
 }
+
+.buyicon {
+    font-size: 2rem;
+    border: 3px solid #2194E0;
+    display: inline-block;
+    padding: 1rem 2rem;
+    position: absolute;
+    top:80vh;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.buyicon::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 2em;
+    display: block;
+    position: absolute;
+    top:0;
+    left: -8rem;
+    transform: skewX(-45deg) translateX(0);
+}
+
+.buyicon:hover {
+    background-color: #2194E0;
+    color:#B7BBC4;
+    border-bottom: 4px solid #166194;
+}
+
+.buyicon:hover:before {
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
+}
