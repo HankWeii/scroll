@@ -1,0 +1,198 @@
+.top {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.bottom {
+    background-color: #3D3D3D;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.mouse {
+    display: block;
+    position: absolute;
+    transition: transform 0.5s ease-out;
+    filter: drop-shadow(-0.5rem -0.5rem 1.75rem white);
+    z-index: 1;
+}
+
+
+.move {
+    transition: transform 1s ease-out;
+    transform: translate(-30rem,100vh);
+}
+
+.producttitle {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    position: absolute;
+    transition: left 0.5s ease-out, opacity 0.5s ease-out;
+    left: -50%;
+    opacity: 0;
+    margin: 0 0 0 0.4rem;
+    color: #B7BBC4;
+}
+
+.producttitlemove {
+    transition: left 1s ease-out, opacity 1s ease-in;
+    transition-delay: 1s;
+    left:0;
+    opacity: 1;
+}
+
+.bottomline {
+    border-bottom: 0.5rem solid #B7BBC4;
+}
+
+.navitem {
+    display: flex;
+    height: 8vh;
+    background-color: #3D3D3D;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.navtextout {
+    display: flex;
+    justify-content: space-around;
+    width: 75vh;
+}
+
+.navtext {
+    line-height: 8vh;
+    font-weight: bold;
+    color: #B7BBC4;
+    cursor: pointer;
+}
+
+.naviconout {
+    display: flex;
+    justify-content: space-around;
+    width: 25vh;
+}
+
+.search {
+    background-image: url("search.png");
+    height: 3vh;
+    width: 4vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.basket {
+    background-image: url("basket.png");
+    height: 3vh;
+    width: 4vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heart {
+    background-image: url("heart.png");
+    height: 3vh;
+    width: 4vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.search_text {
+    position: absolute;
+    right: 14vw;
+    top:3vh;
+    display: none;
+    opacity: 0;
+}
+
+.search_button {
+    position: absolute;
+    right: 12vw;
+    top:3vh;
+    display: none;
+    opacity: 0;
+}
+
+.naviconout div {
+    cursor: pointer;
+}
+
+.nav1list1 {
+    position: absolute;
+    height: 20vh;
+    background-color: #3D3D3D;
+    width: 10vw;
+    z-index: 1;
+    display: none;
+}
+
+.navtext1 {
+    position: relative;
+}
+
+.list_text {
+    height: 4vh;
+    line-height: 4vh;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.slogan {
+    position: absolute;
+    font-size: 3rem;
+    padding: 3.5rem;
+    color: #B7BBC4;
+    border-left: 5px solid #B7BBC4;
+    line-height: 1vh;
+}
+
+.sloganpage {
+    height: 100vh;
+    width: 45vw;
+    float: right;
+    position: relative;
+}
+
+.slogan1 {
+    transition: top 0.5s ease-out, opacity 0.5s ease-out;
+    top: 32rem;
+    opacity: 0;
+}
+
+.slogan2 {
+    transition: top 0.5s ease-out, opacity 0.5s ease-out;
+    top: 44rem;
+    opacity: 0;
+}
+
+.slogan3 {
+    transition: top 0.5s ease-out, opacity 0.5s ease-out;
+    top: 20rem;
+    opacity: 0; 
+}
+
+.slogan1move {
+    transition: top 1s ease-out, opacity 1s ease-in;
+    opacity: 1;
+    top: 20rem;
+}
+
+.slogan2move {
+    transition: top 1s ease-out, opacity 1s ease-in;
+    opacity: 1;
+    top: 32rem;
+}
+
+.slogan3move {
+    transition: top 1s ease-out, opacity 1s ease-in;
+    opacity: 1;
+    top: 8rem;
+}
